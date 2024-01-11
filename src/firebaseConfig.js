@@ -6,26 +6,21 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
 // Your web app's Firebase configuration
+
+
+
+
 const firebaseConfig = {
-  apiKey: "AIzaSyDDUbgG2hgC5K6DM3NFftSBGVEenXVdnss",
-  authDomain: "linkedin-clone-945dc.firebaseapp.com",
-  projectId: "linkedin-clone-945dc",
-  storageBucket: "linkedin-clone-945dc.appspot.com",
-  messagingSenderId: "656702452641",
-  appId: "1:656702452641:web:51a5c063942f597c9ed1e0"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
 };
 
 
-// console.log("import.meta.env.VITE_APIKEY :>> ", import.meta.env.VITE_APIKEY);
 
-// const firebaseConfig = {
-//   apiKey: import.meta.env.VITE_APIKEY,
-//   authDomain: import.meta.env.VITE_AUTHDOMAIN,
-//   projectId: import.meta.env.VITE_PROJECTID,
-//   storageBucket: import.meta.env.VITE_STORAGEBUCKET,
-//   messagingSenderId: import.meta.env.VITE_MESSAGINGSERDERID,
-//   appId: import.meta.env.VITE_APPID,
-// };
 
 
 // Initialize Firebase
