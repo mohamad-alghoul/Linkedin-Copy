@@ -100,7 +100,7 @@ useMemo(()=>{
         {allStatuses.map((posts) => {
           return (
             <div key={posts.id}>
-              <PostsCard posts={posts} getEditData={getEditData}  />
+              <PostsCard posts={posts} getEditData={getEditData} id={posts.id}  />
             </div>
           );
         })}

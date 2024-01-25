@@ -26,6 +26,7 @@ export const PostsCard = ({ posts,id ,getEditData}) => {
     getAllUsers(setAllUsers);
   }, []);
 
+  console.log(currentUser)
   useEffect(() => {
     getConnections(currentUser.id, posts.userID, setIsConnected);
   }, [currentUser.id, posts.userID]);
