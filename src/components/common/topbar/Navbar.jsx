@@ -10,7 +10,7 @@ import "./navbar.scss";
 import { ProfilePopup } from "../userPupop/UserPupop"
 import { useEffect, useState } from "react";
 import { SearchInput } from "../saerchInput/SearchInput";
-import { getAllUsers } from "../../../api/FirestoreAPI";
+import { getAllUsers } from "../../../api/FirestoreAPI" ;
 
 
 export const  Navbar =({currentUser}) =>{
